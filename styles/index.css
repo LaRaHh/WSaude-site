@@ -23,6 +23,11 @@ a:hover{
   text-decoration: none;
 }
 
+img{
+  max-width:100%;
+	height:auto;
+}
+
 /*HEADER*/
 
 .nav{
@@ -287,7 +292,7 @@ input[type="checkbox"]{
   align-items: center;
 }
 
-.title-main .img{
+.title-main img{
   order: 1;
   max-width: 100%;
   display: block;
@@ -306,6 +311,37 @@ input[type="checkbox"]{
 .text strong {
   color: #0A6076;
   font-size: 2rem;
+}
+
+.title-main .title-info{
+  border: none;
+  color: #000;
+  text-align: left;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 20px;
+  border-bottom: 3px solid #074555;
+  /*border-bottom-style:dashed;*/
+
+}
+
+.title-main .contact-number{
+background-color: rgba(17, 52, 167, 0.1);
+  border: none;
+  color: #074555;
+  padding: 13px 20px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
 
@@ -339,12 +375,17 @@ input[type="checkbox"]{
   }
 
   .text h1{
-    font-size: 4rem;
+    line-height: 1.2;
+    letter-spacing: -.02em;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
   }
 
   .text strong{
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .text p{
@@ -352,14 +393,21 @@ input[type="checkbox"]{
     color: grey;
     text-align: inherit;
   }
-  
-  .title-main.img{
+
+  .title-main .title-img{
     order: 2;
+    flex-grow: 6;
+    overflow: visible;
+
   }
 
   .title-main .text{
     order:1;
+    line-height: 3rem;
+    justify-content: left;
+    flex-grow: 2;
   }
+
 }
 
 /*MORE ABOUT*/
@@ -379,7 +427,11 @@ h3 a{
   font-size: 2rem;
   justify-content: center;
   font-weight: 400;
-  color: rgb(22, 28, 45);
+  color:#000;
+}
+
+h3 a:hover{
+  color: #000;
 }
 
 .more-about p{
@@ -506,23 +558,62 @@ svg{
 .plan-card{
   background: #fff;
   border-radius: 6px;
-  margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
-.plan-card h3{
+.card-title {
+  height: 12rem;
+  padding: 4rem 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-title img {
+  max-width: 60px;
+}
+
+.free img{
+  color: goldenrod;
+}
+
+.only img{
+  color: green;
+}
+
+.geral img{
+  color: darkblue;
+}
+
+.card-heading {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  width: 75%;
   justify-content: center;
   padding-top: 30px;
+  padding-bottom: 20px;
   font-weight: 600;
-  color: #000;
+  color: rgb(101, 104, 110);
   font-size: 2rem;
-
 }
+
 
 .plan-card .plan-item{
   display: flex;
   margin: 20px 60px;
-  padding: 10px 5px;
+  padding: 5px;
 }
 
 .plan-card .icon-plan{
@@ -545,6 +636,7 @@ svg{
   border-bottom-right-radius: 6px;
   font-size: 1.5rem;
   font-weight: 400;
+
 }
 
 .plan-card .button-buy a{
