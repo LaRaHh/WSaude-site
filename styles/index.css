@@ -34,12 +34,14 @@ a:hover{
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
   margin-top: 20px;
+  background: #fff;
 }
 
 .nav span{
     font-size: 1.5rem;
     display: inline-block;
     color: #7f7f7f;
+    
 }
 
 .nav .logo{
@@ -61,21 +63,22 @@ a:hover{
 }
 
 .nav ul li a{
-  color: #7f7f7f;
+  color: #4e4d4d;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   padding: 8px 15px;
   border-radius: 5px;
   letter-spacing: 1px;
-  transition: all 0.3s ease;
 }
 
 .nav ul li a.active,
 .nav ul li a:hover{
   color: #111;
   background: #fff;
-  text-decoration: none;
+  text-decoration:none;
+  border-bottom: 3px solid #0A6076;
+  border-radius: 0;
 }
 
 .nav .button{
@@ -114,6 +117,9 @@ input[type="checkbox"]{
   .nav .menu-btn i{
     display: block;
   }
+
+  
+
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
   }
@@ -197,15 +203,23 @@ input[type="checkbox"]{
     box-shadow: 0 0 40px 40px #2D9AA9 inset;
   }
   .nav .button{
-    margin-left: 100px;
+    margin-left: 40px;
     padding: 10px 20px;
   }
   
+  /*header .nav{
+    width: 1100px; 
+    position: fixed; 
+    top: 0; 
+    z-index: 50;
+    background: #fff;
+  }*/
+
 }
 
 @media (min-width: 1200px){
   .nav .button{
-    margin-left: 180px;
+    margin-left: 120px;
     padding: 10px 20px;
   }
 
@@ -249,6 +263,17 @@ input[type="checkbox"]{
     box-shadow: 0 0 40px 40px #2D9AA9 inset;
   }
 
+  /*
+  header .nav{
+    width: 1200px;
+    right: 100px; 
+    position: fixed; 
+    top: 0; 
+    z-index: 50;
+    background: #fff;
+  }
+  */
+
 }
 
 
@@ -273,7 +298,7 @@ input[type="checkbox"]{
 }
 
 .text h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
   justify-content: center;
   font-weight: 400;
 }
@@ -285,6 +310,10 @@ input[type="checkbox"]{
 
 
 @media (min-width: 1000px) {
+
+  #start{
+    border-bottom: 1px solid #f3f1f1;
+  }
 
   .title-main{
     display: flex;
@@ -338,9 +367,8 @@ input[type="checkbox"]{
 .more-about{
   display: flex;
   flex-wrap: wrap;
-  padding: 11px ;
+  padding: 40px;
 }
-
 
 .icon{
   font-size: 3rem;
@@ -351,25 +379,79 @@ h3 a{
   font-size: 2rem;
   justify-content: center;
   font-weight: 400;
-  color: #111;
+  color: rgb(22, 28, 45);
 }
 
 .more-about p{
   font-size: 1.5rem;
   color: grey;
-  text-align: start;
+  text-align: left;
+  line-height: 27.2px;
 }
 
-/*CARD SPACE*/
+@media (min-width: 1000px){
+  .more-about{
+    margin-left: 80px;
+  }
+
+}
+
+
+/*MODULES*/
 
 svg{
   display: block;
 }
 
-.curved-upper{
+.modules-section{
   background: rgb(251, 254, 255);
-
+  border-top: 1px solid #f3f1f1;
 }
+
+.modules{
+  display: flex;
+  padding-top: 80px;
+}
+
+.modules-img{
+  display: none;
+}
+
+.text-modules{
+  flex: 3;
+  color: #074555;
+  margin-left: 20px;
+}
+
+.text-modules h2{
+  white-space: normal;
+  padding-top: 40px;
+  font-weight: 700;
+  font-size: 3rem;
+  flex-wrap: wrap;
+  line-height: 4rem;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.text-modules h2 strong{
+  color: #1290af;
+}
+
+.text-modules p{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: left;
+}
+
+@media (min-width: 768px){
+  .modules-img{
+    display: block;
+    flex: 5;
+  }
+}
+
+/* CARD FUNCTIONS*/
 
 .card-space-1{
   background:#eaf4f7;
@@ -413,39 +495,46 @@ svg{
   font-size: 36px;
 }
 
-/*CARD PRICE*/
+/*CARD PLAN*/
+
 .card-space-2{
   background:#0A6076;
   text-align: center;
-  padding: 60px 0;
+  padding-top: 100px;
 }
 
-.price-card{
+.plan-card{
   background: #fff;
   border-radius: 6px;
+  margin-bottom: 30px;
 }
 
-.price-card h3{
+.plan-card h3{
   display: flex;
   justify-content: center;
-  padding: 32px;
+  padding-top: 30px;
+  font-weight: 600;
+  color: #000;
+  font-size: 2rem;
+
 }
 
-.price-card .price-item{
+.plan-card .plan-item{
   display: flex;
   margin: 20px 60px;
-  padding: 10px;
+  padding: 10px 5px;
 }
 
-.price-card .icon-price{
+.plan-card .icon-plan{
   color: rgb(1, 160, 72);
   background: #eaf4f7;
   border-radius: 50%;
   width: 30px;
   height: 20px;
+  
 }
 
-.price-card .button-buy{
+.plan-card .button-buy{
   background: #2D9AA9;
   width: 100%;
   display: block;
@@ -458,7 +547,7 @@ svg{
   font-weight: 400;
 }
 
-.price-card .button-buy a{
+.plan-card .button-buy a{
   color: #fff;
 }
 
@@ -467,5 +556,54 @@ svg{
 .footer{
   display: flex;
   background: rgb(251, 254, 255);
-  margin: 60px 0;
+  padding: 60px;
+}
+
+.logo-footer{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color: #8c8c8d;
+  font-weight: 700;
+}
+
+.icons-contact{
+  display: inline-flex;
+}
+
+.icon-footer{
+  font-size: 2rem;
+  color: #808080;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.footer .addres, .connect, .legal{
+  font-size: 1.5rem;
+  line-height: 4rem;
+  margin: 20px 0;
+  color: #4f4f50;
+  text-decoration: none;
+}
+
+.footer .addres strong{
+  color: #0A6076;
+  font-weight: normal;
+}
+
+.footer .connect i{
+  font-size: 2rem;
+  justify-content: center;
+  text-align: center;
+  color: #0A6076;
+  margin-right: 0 5px;
+}
+
+.footer .legal i{
+  margin-right: 5px;
+  color:  #0A6076;
+}
+
+.footer .legal a{
+  color: #4f4f50;
 }
