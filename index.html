@@ -18,17 +18,17 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="phone">
+            <div class="phone" id="phone">
                 <p><i class="fab fa-whatsapp"></i> +55 82 9 9647-6896</p>
                 <p><i class="far fa-envelope"></i> suporte@wlcsolucoes.com.br</p>
                 <p>Venha saber mais sobre a nossa solução para o seu negócio!</p>
             </div>
-            <div class="col col-md-8 col-lg-12">
-                <div class="container">
+            <div class="col">
+                
                     <!--Header-->
                     <header>
 
-                        <nav class="nav">
+                        <nav class="nav" id="navbar">
                             <div class="logo"><a href="https://wsaudebr.com.br/"><img src="assets/wsaude_v2.svg"
                                         width="100" height="100" alt="Logo"></a>
                             </div>
@@ -57,15 +57,16 @@
                                 </ul>
                             </div>
                             <div class="logo"><a href="https://wsaudebr.com.br/"><img src="assets/wsaude_v2.svg"
-                                width="100" height="100" alt="Logo"></a>
+                                        width="100" height="100" alt="Logo"></a>
                             </div>
                         </nav>
 
                     </header>
-                </div>
+                
 
             </div>
         </div>
+
 
         <!--HERO-->
         <div class="row" id="start">
@@ -94,28 +95,31 @@
                         <div class="icon">
                             <i class="fas fa-users"></i>
                         </div>
-                        <h3><a href="#">Sobre nós</a></h3>
+                        <h3><a href="./pages/aboutUs.html">Sobre nós</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem officiis.
                         </p>
+                        <a class="button-link" href="./pages/aboutUs.html">Saiba mais</a>
                     </div>
                     <div class="col col-12 col-md-4">
                         <div class="icon">
                             <i class="fas fa-user-lock"></i>
                         </div>
-                        <h3><a href="#">Política de Privacidade</a></h3>
+                        <h3><a href="./pages/privacyPolicy.html">Política de Privacidade</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem officiis.
                         </p>
+                        <a class="button-link" href="./pages/privacyPolicy.html">Saiba mais</a>
                     </div>
                     <div class="col col-12 col-md-4">
                         <div class="icon">
                             <i class="fas fa-file-signature"></i>
                         </div>
-                        <h3><a href="#">Termos de uso</a></h3>
+                        <h3><a href="./pages/termsofUse.html">Termos de uso</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem officiis.
                         </p>
+                        <a class="button-link" href="./pages/termsofUse.html">Saiba mais</a>
                     </div>
 
                 </div>
@@ -319,73 +323,73 @@
 
     <!--Footer-->
 
-    <div>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-12 col-md-3">
-                        <div class="brand">
-                            <div class="logo-footer"><img src="assets/wsaude_v2.svg" width="80" height="80" alt="Logo">
-                                <p>Gestão sem papel.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-3">
+                    <div class="brand">
+                        <div class="logo-footer"><img src="assets/wsaude_v2.svg" width="80" height="80" alt="Logo">
+                            <p>Gestão sem papel.</p>
+                        </div>
+                        <div class="icons-contact">
+                            <div class="icon-footer">
+                                <span><i class="fab fa-facebook-f"></i></span>
                             </div>
-                            <div class="icons-contact">
-                                <div class="icon-footer">
-                                    <span><i class="fab fa-facebook-f"></i></span>
-                                </div>
-                                <div class="icon-footer">
-                                    <span><i class="fab fa-instagram"></i></span>
-                                </div>
-                                <div class="icon-footer">
-                                    <span><i class="fab fa-youtube"></i></span>
-                                </div>
-                                <div class="icon-footer">
-                                    <span><i class="fab fa-github"></i></span>
-                                </div>
+                            <div class="icon-footer">
+                                <span><i class="fab fa-instagram"></i></span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col col-12 col-md-3">
-                        <div class="addres">
-                            <h4>Endereço</h4>
-                            <ul>
-                                <li>Rua Jose Maia Gomes, <strong>258</strong> </li>
-                                <li>Maceió-AL</li>
-                                <li><strong>57036-170</strong></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-12 col-md-3">
-                        <div class="connect">
-                            <h4>Fale conosco</h4>
-                            <ul>
-                                <li>
-
-                                    <p><i class="far fa-envelope"></i> suporte@wlcsolucoes.com.br</p>
-                                </li>
-                                <li>
-
-                                    <p><i class="fas fa-phone-volume"></i>+55 82 9 9647-6896</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-12 col-md-3">
-                        <div class="legal">
-                            <h4>Links Úteis</h4>
-                            <ul>
-                                <li><i class="fas fa-link"></i><a href="">Manual do WSaúde</a></li>
-                                <li><i class="fas fa-link"></i><a href="">Sobre Nós</a></li>
-                                <li><i class="fas fa-link"></i><a href="">Política de Privacidade</a></li>
-                                <li><i class="fas fa-link"></i><a href="">Termos de Uso</a></li>
-                            </ul>
+                            <div class="icon-footer">
+                                <span><i class="fab fa-youtube"></i></span>
+                            </div>
+                            <div class="icon-footer">
+                                <span><i class="fab fa-github"></i></span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col col-12 col-md-3">
+                    <div class="addres">
+                        <h4>Endereço</h4>
+                        <ul>
+                            <li>Rua Jose Maia Gomes, <strong>258</strong> </li>
+                            <li>Maceió-AL</li>
+                            <li><strong>57036-170</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-3">
+                    <div class="connect">
+                        <h4>Fale conosco</h4>
+                        <ul>
+                            <li>
+
+                                <p><i class="far fa-envelope"></i> suporte@wlcsolucoes.com.br</p>
+                            </li>
+                            <li>
+
+                                <p><i class="fas fa-phone-volume"></i>+55 82 9 9647-6896</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-3">
+                    <div class="legal">
+                        <h4>Links Úteis</h4>
+                        <ul>
+                            <li><i class="fas fa-link"></i><a href="">Manual do WSaúde</a></li>
+                            <li><i class="fas fa-link"></i><a href="">Sobre Nós</a></li>
+                            <li><i class="fas fa-link"></i><a href="">Política de Privacidade</a></li>
+                            <li><i class="fas fa-link"></i><a href="">Termos de Uso</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </div>
 
-        </footer>
-    </div>
+    </footer>
 
+    <!--Script-->
+   <script src="./apps/menuFixed.js"></script>
 </body>
 
 </html>

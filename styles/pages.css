@@ -1,0 +1,20 @@
+.main{
+    background: #127486;
+}
+
+.main-content{
+    margin: 20px 60px;
+    padding: 36px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.main-content h2{
+    color: #268c9e;
+}
+
+@media (min-width: 1200px) and (max-width: 3000px){
+    .nav .button{
+      margin-left: 120px;
+      padding: 10px 20px;
+    }

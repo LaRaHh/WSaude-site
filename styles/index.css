@@ -241,8 +241,37 @@ svg{
     flex-wrap: wrap;
     margin-top: 20px;
     background: #fff;
+    overflow: hidden;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 40px;
+    flex-wrap: wrap;
+    margin-top: 0;
+    z-index: 10;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
   }
   
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .sticky2{
+    position: fixed;
+    top: 0;
+    flex-wrap: wrap;
+    margin-top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+
+  .sticky2 + .content {
+    padding-top: 60px;
+  }
+
   .nav span{
       font-size: 1.5rem;
       display: inline-block;
@@ -353,7 +382,7 @@ svg{
 
 @media (min-width: 1200px) and (max-width: 3000px){
   .nav .button{
-    margin-left: 120px;
+    margin-left: 240px;
     padding: 10px 20px;
   }
 
@@ -473,7 +502,7 @@ background-color: rgba(17, 52, 167, 0.1);
     display: flex;
     flex-wrap: wrap;  
     justify-content: center; 
-    padding: 100px 0;
+    padding: 120px 0;
   }
 
   .title-main > div{
@@ -549,7 +578,7 @@ h3 a{
 }
 
 h3 a:hover{
-  color: #000;
+  color: #074555;
 }
 
 .more-about p{
@@ -557,6 +586,27 @@ h3 a:hover{
   color: grey;
   text-align: left;
   line-height: 27.2px;
+}
+
+.button-link{
+  display: block; 
+  font-weight: normal;
+  font-size: 0.8em;
+  max-width: 120px;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 20px 10px 20px;
+  text-transform: uppercase;
+  background-image: linear-gradient(#0A6076, #127486 );
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.89);
+  margin: 16px 0;
+}
+
+.button-link:hover {
+background: #2D9AA9;
+color: white;
 }
 
 @media (min-width: 1000px){
@@ -637,7 +687,7 @@ h3 a:hover{
 
 
 .functions{
-  margin: 60px 20px 0 20px;
+  margin: 80px 40px 0 20px;
   border: 1px solid #0A6076;
   padding: 60px 55px 57px 57px;
   border-radius: 13px;
@@ -666,14 +716,25 @@ h3 a:hover{
 .card-space-2{
   background:#0A6076;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 200px;
 }
 
 .plan-card{
   background: #fff;
   border-radius: 6px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.plan-card:hover{
+  -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: 0.3s ease-in;
+        -moz-transition: 0.3s ease-in;
+        -o-transition: 0.3s ease-in;
+        transition: 0.3s ease-in
 }
 
 .card-title {
@@ -757,7 +818,9 @@ h3 a:hover{
   color: #fff;
 }
 
-
+.plan-card .button-buy:hover{
+  background: #07455554;
+}
 
 /*FOOTER*/
 .footer{
