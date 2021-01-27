@@ -1,5 +1,5 @@
 .main{
-    background: #127486;
+    background: #2D9AA9;
 }
 
 .main-content{
@@ -9,8 +9,38 @@
     border-radius: 6px;
 }
 
+.main-content h2, h3{
+    color: #0A6076;
+}
+
 .main-content h2{
-    color: #268c9e;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.main-content h3{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.main-content h4{
+    color: #777777;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 20px 0 10px 0;
+}
+
+.main-content p{
+    color: #777777;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.main-content span{
+    margin-right: 5px;
+    color: #2D9AA9;
+    font-weight: 600;
 }
 
 @media (min-width: 1200px) and (max-width: 3000px){
@@ -18,3 +48,8 @@
       margin-left: 120px;
       padding: 10px 20px;
     }
+
+    .nav ul .button{
+        margin-left: 150px;
+    }
+}

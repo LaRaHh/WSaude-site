@@ -44,34 +44,37 @@ svg{
 
 .nav-mobile{
   display: flex;
-    height: 80px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    background: #fff;
-    /*overflow: hidden;*/
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background: #fff;
+}
+
+.hide-menu{
+  opacity: 0;
 }
 
 .nav-mobile ul li a{
-  color: #4e4d4d;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
   padding: 8px 15px;
   border-radius: 5px;
   letter-spacing: 1px;
+  line-height: 50px;
 }
 
 .nav-mobile ul li a.active,
 .nav-mobile ul li a:hover{
-  color: #111;
-  background: #fff;
+  color: #fff;
   text-decoration:none;
-  border-bottom: 3px solid #0A6076;
+  border-bottom: 3px solid #fff;
   border-radius: 0;
 }
 
@@ -81,9 +84,9 @@ svg{
      -moz-appearance: none;
           appearance: none;
   background-color: transparent;
-  border: 2px solid #2D9AA9;
+  border: 2px solid #fff;
   border-radius: 0.6em;
-  color: #2D9AA9;
+  color: #fff;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -101,10 +104,11 @@ svg{
   text-transform: uppercase;
   font-weight: 700;
   justify-content: center;
+  margin: 30px 0;
 }
 
 .button:hover, .button:focus {
-  color: #fff;
+  color: #074555;
   outline: 0;
 }
 
@@ -113,7 +117,7 @@ svg{
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 .animation:hover {
-  box-shadow: 0 0 40px 40px #2D9AA9 inset;
+  box-shadow: 0 0 40px 40px #fff inset;
 }
 
 #menuToggle {
@@ -168,8 +172,9 @@ svg{
 {
   opacity: 1;
   transform: rotate(45deg) translate(-3px, -1px);
-  background: #36383F;
+  background: #fff;
 }
+
 #menuToggle input:checked ~ .menu-line:nth-last-child(3)
 {
   opacity: 0;
@@ -184,13 +189,13 @@ svg{
 #menu
 {
   position: absolute;
-  width: 250px;
-  height: 400px;
+  width: 270px;
+  height: 100vh;
   box-shadow: 0 0 10px #85888C;
-  margin: -50px 0 0 -50px;
+  margin: -60px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background-color: #F5F6FA;
+  background-color: #074555;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -203,9 +208,30 @@ svg{
   transition-delay: 2s;
 }
 
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul{
   transform: none;
+}
+
+#menu input:checked ~ ul{
+  transform: none;
+}
+
+.stopScroll{
+  overflow: hidden;
+}
+
+@media (min-width:800px){
+  .phone p{
+    margin-bottom: 5px;
+  }
+
+  .sticky{
+    top: 60px;
+  }
+
+  .sticky + .content {
+    padding-top: 80px;
+  }
 }
 
 @media (min-width: 1000px){
@@ -219,12 +245,13 @@ svg{
     background-color: #074555;
     color: #fff;
     padding: 10px 0;
-    padding-left: 200px;
+    padding-left: 100px;
     justify-content: left;
   }
   
   .phone p{
-    margin-right: 50px;
+    margin-right: 100px;
+    
   }
 
   #menuToggle{
@@ -252,7 +279,9 @@ svg{
     z-index: 10;
     width: 100%;
     justify-content: space-between;
-    padding: 20px;
+    padding-left: 100px;
+    padding-right: 50px;
+    /*border-bottom: 1px solid #0000003b;*/
   }
   
   .sticky + .content {
@@ -439,9 +468,12 @@ svg{
   align-items: center;
 }
 
+.title-img{
+  width: 100%;
+}
+
 .title-main img{
   order: 1;
-  max-width: 100%;
   display: block;
 }
 
@@ -492,7 +524,7 @@ background-color: rgba(17, 52, 167, 0.1);
 }
 
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
 
   #start{
     border-bottom: 1px solid #f3f1f1;
@@ -502,7 +534,7 @@ background-color: rgba(17, 52, 167, 0.1);
     display: flex;
     flex-wrap: wrap;  
     justify-content: center; 
-    padding: 120px 0;
+    padding: 50px 0;
   }
 
   .title-main > div{
@@ -565,6 +597,12 @@ background-color: rgba(17, 52, 167, 0.1);
   padding: 40px;
 }
 
+.more-about .col{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 0;
+}
+
 .icon{
   font-size: 3rem;
   color: #0A6076;
@@ -612,6 +650,12 @@ color: white;
 @media (min-width: 1000px){
   .more-about{
     margin-left: 80px;
+    
+  }
+
+  .more-about .col{
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
 }
@@ -626,7 +670,7 @@ color: white;
 
 .modules{
   display: flex;
-  padding-top: 80px;
+  
 }
 
 .modules-img{
@@ -665,7 +709,12 @@ color: white;
     display: block;
     flex: 5;
   }
+
+  .modules{
+    margin: 250px 0;
+  }
 }
+
 
 /* CARD FUNCTIONS*/
 
@@ -678,7 +727,7 @@ color: white;
 .card-space-1 h2{
   font-weight: 400;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .card-space-1 h2 strong{
@@ -711,12 +760,19 @@ color: white;
   font-size: 36px;
 }
 
+@media (min-width: 768px){
+  .card-space-1 h2{
+    margin-top: 200px;
+  }
+
+}
+
 /*CARD PLAN*/
 
 .card-space-2{
   background:#0A6076;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .plan-card{
@@ -822,6 +878,13 @@ color: white;
   background: #07455554;
 }
 
+@media (min-width: 768px){
+  .card-space-2{
+    padding-top: 200px;
+  }
+
+}
+
 /*FOOTER*/
 .footer{
   display: flex;
@@ -839,13 +902,19 @@ color: white;
 
 .icons-contact{
   display: inline-flex;
+  margin-top: 20px;
 }
 
-.icon-footer{
+.icon-footer a{
   font-size: 2rem;
   color: #808080;
   margin-right: 20px;
   margin-top: 20px;
+}
+
+.icon-footer a:hover{
+  color: #2D9AA9;
+  font-weight: 600;
 }
 
 .footer .addres, .connect, .legal{
@@ -862,18 +931,22 @@ color: white;
 }
 
 .footer .connect i{
-  font-size: 2rem;
   justify-content: center;
   text-align: center;
   color: #0A6076;
-  margin-right: 0 5px;
+  
 }
 
 .footer .legal i{
-  margin-right: 5px;
+  margin-right: 10px;
   color:  #0A6076;
 }
 
 .footer .legal a{
   color: #4f4f50;
+}
+
+.footer .legal a:hover{
+  color: #074555;
+  font-weight: 600;
 }
