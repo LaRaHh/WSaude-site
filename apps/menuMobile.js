@@ -21,4 +21,5 @@ menuMobileA.forEach(i => {
 
 function closeMenu(i){
     document.body.style.overflow = "visible"
+    input.checked = false
 }

@@ -131,8 +131,7 @@ svg{
   user-select: none;
 }
 
-#menuToggle input
-{
+#menuToggle input{
   display: flex;
   width: 40px;
   height: 32px;
@@ -212,9 +211,11 @@ svg{
   transform: none;
 }
 
+/*
 #menu input:checked ~ ul{
   transform: none;
 }
+*/
 
 .stopScroll{
   overflow: hidden;
