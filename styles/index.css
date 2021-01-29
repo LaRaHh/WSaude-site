@@ -211,29 +211,11 @@ svg{
   transform: none;
 }
 
-/*
-#menu input:checked ~ ul{
-  transform: none;
-}
-*/
-
 .stopScroll{
   overflow: hidden;
 }
 
-@media (min-width:800px){
-  .phone p{
-    margin-bottom: 5px;
-  }
 
-  .sticky{
-    top: 60px;
-  }
-
-  .sticky + .content {
-    padding-top: 80px;
-  }
-}
 
 @media (min-width: 1000px){
 
@@ -252,6 +234,7 @@ svg{
   
   .phone p{
     margin-right: 100px;
+    text-align: center;
     
   }
 
@@ -292,10 +275,13 @@ svg{
   .sticky2{
     position: fixed;
     top: 0;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     margin-top: 0;
     z-index: 10;
     width: 100%;
+    text-align: center;
+    padding-top: 15px ;
+    
   }
 
   .sticky2 + .content {
@@ -527,9 +513,9 @@ background-color: rgba(17, 52, 167, 0.1);
 
 @media (min-width: 768px) {
 
-  #start{
+  /*#start{
     border-bottom: 1px solid #f3f1f1;
-  }
+  }*/
 
   .title-main{
     display: flex;
@@ -666,7 +652,7 @@ color: white;
 
 .modules-section{
   background: rgb(251, 254, 255);
-  border-top: 1px solid #f3f1f1;
+  /**/border-top: 1px solid #f3f1f1;
 }
 
 .modules{
@@ -795,8 +781,8 @@ color: white;
 }
 
 .card-title {
-  height: 16rem;
-  padding: 4rem 2rem 2rem;
+  height: 15rem;
+  padding: 3.5rem 1.5rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,17 +802,6 @@ color: white;
   max-width: 60px;
 }
 
-.free img{
-  color: goldenrod;
-}
-
-.only img{
-  color: green;
-}
-
-.geral img{
-  color: darkblue;
-}
 
 .card-heading {
   font-weight: 600;
@@ -837,7 +812,7 @@ color: white;
   padding-top: 30px;
   padding-bottom: 20px;
   font-weight: 600;
-  color: rgb(101, 104, 110);
+  color:#65686e;
   font-size: 2rem;
 }
 
@@ -884,6 +859,54 @@ color: white;
     padding-top: 200px;
   }
 
+}
+
+/*FREQUENT QUESTIONS*/
+
+.frequent-questions{
+    padding-top: 60px;
+}
+
+.questions{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.questions span{
+  height: calc(1em + 1.4em);
+  padding-left: .7em;
+  padding-right: .7em;
+  border-radius: 10rem;
+  background: #2D9AA9;
+  color: #fff;
+  padding: .7em 1.15em;
+  display: inline-block;
+  font-size: 75%;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  
+}
+
+.questions h3{
+  color: #fff;
+  margin-left: 1.5rem!important;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 400;
+  order: 1;
+  text-align: left;
+}
+
+.questions p{
+  color: #c2c5ca;
+  order: 2;
+  text-align: justify;
+  margin-left: 4.5rem;
 }
 
 /*FOOTER*/

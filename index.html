@@ -10,7 +10,10 @@
 
     <link rel="stylesheet" href="./styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/index.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 
     <title>WSaúde - Gestão Sem Papel</title>
 </head>
@@ -21,48 +24,48 @@
             <div class="phone" id="phone">
                 <p><i class="fab fa-whatsapp"></i> +55 82 9 9647-6896</p>
                 <p><i class="far fa-envelope"></i> suporte@wlcsolucoes.com.br</p>
-                <p>Venha saber mais sobre a nossa solução para o seu negócio!</p>
+                <p>Venha saber mais sobre o WSaúde, gestão sem papel!</p>
             </div>
             <div class="col">
-                
-                    <!--Header-->
-                    <header>
 
-                        <nav class="nav" id="navbar">
-                            <div class="logo"><a href="https://wsaudebr.com.br/"><img src="assets/wsaude_v2.svg"
-                                        width="100" height="100" alt="Logo"></a>
-                            </div>
+                <!--Header-->
+                <header>
 
-                            <ul>
+                    <nav class="nav" id="navbar">
+                        <div class="logo"><a href="https://wsaudebr.com.br/"><img src="assets/wsaude_v2.svg" width="100"
+                                    height="100" alt="Logo"></a>
+                        </div>
+
+                        <ul>
+                            <li><a href="#start">Ínicio</a></li>
+                            <li><a href="#modules">Módulos</a></li>
+                            <li><a href="#functions">Funcionalidades</a></li>
+                            <li><a href="#plan">Planos</a></li>
+                            <a href="https://app.wsaudebr.com.br/" class="button animation">Acessar</a>
+                        </ul>
+                    </nav>
+
+                    <nav class="nav-mobile">
+                        <div id="menuToggle">
+                            <input type="checkbox" id="inputMenu" />
+                            <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                            <ul id="menu">
                                 <li><a href="#start">Ínicio</a></li>
                                 <li><a href="#modules">Módulos</a></li>
                                 <li><a href="#functions">Funcionalidades</a></li>
                                 <li><a href="#plan">Planos</a></li>
                                 <a href="https://app.wsaudebr.com.br/" class="button animation">Acessar</a>
                             </ul>
-                        </nav>
+                        </div>
+                        <div class="logo"><a href="https://wsaudebr.com.br/"><img src="assets/wsaude_v2.svg" width="100"
+                                    height="100" alt="Logo"></a>
+                        </div>
+                    </nav>
 
-                        <nav class="nav-mobile">
-                            <div id="menuToggle">
-                                <input type="checkbox" id="inputMenu"/>
-                                <span class="menu-line"></span>
-                                <span class="menu-line"></span>
-                                <span class="menu-line"></span>
-                                <ul id="menu">
-                                    <li><a href="#start">Ínicio</a></li>
-                                    <li><a href="#modules">Módulos</a></li>
-                                    <li><a href="#functions">Funcionalidades</a></li>
-                                    <li><a href="#plan">Planos</a></li>
-                                    <a href="https://app.wsaudebr.com.br/" class="button animation">Acessar</a>
-                                </ul>
-                            </div>
-                            <div class="logo"><a href="https://wsaudebr.com.br/"><img src="assets/wsaude_v2.svg"
-                                        width="100" height="100" alt="Logo"></a>
-                            </div>
-                        </nav>
+                </header>
 
-                    </header>
-                
 
             </div>
         </div>
@@ -73,13 +76,15 @@
             <div class="col col-md-8 col-lg-12">
                 <div class="container">
                     <section class="title-main">
-                        <div class="text">
+                        <div class="text" data-aos="fade-up">
                             <h1>Bem vindo ao <strong>WSaúde</strong>. <br> Gestão sem papel.</h1>
                             <p>A nossa solução é ideal para o gerenciamento do seu negócio</p>
                             <p class="title-info">Fale com um especialista:</p>
-                            <a class="contact-number" target="__blank" href="https://api.whatsapp.com/send?phone=5582998234782&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20o%20WSa%C3%BAde&lang=pt_br"><i class="fab fa-whatsapp"></i> 9 9647-6896</a>
+                            <a class="contact-number" target="__blank"
+                                href="https://api.whatsapp.com/send?phone=5582998234782&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20o%20WSa%C3%BAde&lang=pt_br"><i
+                                    class="fab fa-whatsapp"></i> 9 9647-6896</a>
                         </div>
-                        <div class="title-img"><img src="./assets/medico_1_Wsaude.svg" alt="Teste">
+                        <div class="title-img"><img src="./assets/medico_1_Wsaude.svg" data-aos="fade-up" alt="Hero">
                         </div>
 
                     </section>
@@ -87,7 +92,7 @@
             </div>
         </div>
 
-        <!--More about-->
+        <!--More about
         <section class="more-about">
             <div class="container">
                 <div class="row">
@@ -125,6 +130,7 @@
                 </div>
             </div>
         </section>
+        -->
 
     </div>
 
@@ -133,10 +139,10 @@
         <div class="container">
             <div class="row">
                 <div class="modules">
-                    <div class="modules-img">
+                    <div class="modules-img" data-aos="fade-right">
                         <img src="./assets/modulos-transparente.png" alt="" style="width:100%">
                     </div>
-                    <div class="text-modules">
+                    <div class="text-modules" data-aos="fade-left">
                         <h2>Oferecemos uma solução com os mais diversos <strong> módulos </strong> que você precisa em
                             seu negócio</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt facere, nihil neque
@@ -159,59 +165,65 @@
             <div class="row">
                 <h2><strong>WSaúde</strong> é a mais completa solução de gestão da sua clínica ou consultório</h2>
                 <div class="col col-12 col-md-6">
-                    <div class="functions">
+                    <div class="functions" data-aos="fade-right">
                         <div class="icon-functions">
                             <i class="fas fa-notes-medical"></i>
                         </div>
                         <h3>Prontuário completo</h3>
-                        <p>Evoluções, Atestados, Prescrição Digital (Memed), Termos, Orçamentos, Odontograma, TISS, Anexo de Imagens e PDF e muito mais.</p>
+                        <p>Evoluções, Atestados, Prescrição Digital (Memed), Termos, Orçamentos, Odontograma, TISS,
+                            Anexo de Imagens e PDF e muito mais.</p>
                     </div>
                 </div>
                 <div class="col col-12 col-md-6">
-                    <div class="functions">
+                    <div class="functions" data-aos="fade-left">
                         <div class="icon-functions">
                             <i class="fas fa-desktop"></i>
                         </div>
                         <h3>Multiplataforma</h3>
-                        <p>Não importa qual computador, tablet ou smartphone você está usando, o WSáude pode ser acessado a partir de qualquer um desses dispositvos.</p>
+                        <p>Não importa qual computador, tablet ou smartphone você está usando, o WSáude pode ser
+                            acessado a partir de qualquer um desses dispositvos.</p>
                     </div>
                 </div>
 
                 <div class="col col-12 col-md-6">
-                    <div class="functions">
+                    <div class="functions" data-aos="fade-right">
                         <div class="icon-functions">
                             <i class="far fa-image"></i>
                         </div>
                         <h3>Exames online</h3>
-                        <p>Seus pacientes podem obter os resultados dos exames online, diretamente do seu site! Lorem ipsum dolor sit amet consectetur.</p>
+                        <p>Seus pacientes podem obter os resultados dos exames online, diretamente do seu site! Sem
+                            custos adicionais no seu plano.</p>
                     </div>
                 </div>
                 <div class="col col-12 col-md-6">
-                    <div class="functions">
+                    <div class="functions" data-aos="fade-left">
                         <div class="icon-functions">
                             <i class="fas fa-sliders-h"></i>
                         </div>
                         <h3>Personalizado</h3>
-                        <p>Deixe o WSaúde personalizado da forma que torne seu atendimento mais ágil. Lorem ipsum dolor sit amet consectetur.</p>
+                        <p>Deixe o WSaúde personalizado da forma que torne seu atendimento mais ágil. Você pode criar
+                            seus formulários, modelos de receitas e muito mais.</p>
                     </div>
                 </div>
                 <div class="col col-12 col-md-6">
-                    <div class="functions">
+                    <div class="functions" data-aos="fade-right">
                         <div class="icon-functions">
                             <i class="fas fa-globe-americas"></i>
                         </div>
                         <h3>Web</h3>
-                        <p>Não se preocupe com servidores ou rotinas de backup. Somos um sistema em nuvem. Seus dados estão seguros em servidores da Amazon no Brasil.
+                        <p>Não se preocupe com servidores ou rotinas de backup. Somos um sistema em nuvem. Seus dados
+                            estão seguros em servidores da Amazon no Brasil.
                         </p>
                     </div>
                 </div>
                 <div class="col col-12 col-md-6">
-                    <div class="functions">
+                    <div class="functions" data-aos="fade-left">
                         <div class="icon-functions">
                             <i class="far fa-chart-bar"></i>
                         </div>
                         <h3>Indicadores</h3>
-                        <p>Rapidamente é possível visualizar a saúde financeira do seu negócio, tempo médio de atendimento e como os pacientes te encontraram.</p>
+                        <p>Rapidamente é possível visualizar a saúde financeira do seu negócio, tempo médio de
+                            atendimento e como os pacientes te encontraram.</p>
                     </div>
                 </div>
             </div>
@@ -305,6 +317,47 @@
                 </div>
             </div>
         </div>
+        <div class="frequent-questions">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col col-12 col-md-6" >
+                        <div class="questions">
+                            <span>?</span>
+                            <h3>Se eu quiser cancelar os serviços do WSaúde?</h3>
+                            <p>Você pode cancelar a qualquer momento sem nenhum custo. E seus dados podem ser baixados
+                                em .xlsx (Excel) para importação em outro sistema ou em PDF.</p>
+                        </div>
+
+                        <div class="questions">
+                            <span>?</span>
+                            <h3>Existe alguma fidelidade?</h3>
+                            <p>Não. Quando não quiser mais utilizar o WSaúde basta enviar uma mensagem para o e-mail
+                                suporte@wlcsolucoes.com.br solicitando o cancelamento. Você não receberá mais nossas
+                                cobranças.</p>
+                        </div>
+                    </div>
+
+                    <div class="col col-12 col-md-6">
+                        <div class="questions">
+                            <span>?</span>
+                            <h3>Como funcionam os pagamentos?</h3>
+                            <p>A assinatura do WSaúde é mensal e exclusivamente paga por boleto bancário. Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Rerum ex accusamus assumenda.</p>
+                        </div>
+
+
+                        <div class="questions">
+                            <span>?</span>
+                            <h3>Como funciona a troca de sistema para o WSaúde?</h3>
+                            <p>No momento da contratação você deve nos fornecer uma cópia do backup do sistema antigo
+                                para que possamos migrar seus pacientes e atendimentos para o WSaúde.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 318">
             <path fill="#fbfeff" fill-opacity="1"
                 d="M0,192L120,208C240,224,480,256,720,261.3C960,267,1200,245,1320,234.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
@@ -326,16 +379,21 @@
                         </div>
                         <div class="icons-contact">
                             <div class="icon-footer">
-                                <a target="__blank" href="https://www.facebook.com/wlcsolucoes"><i class="fab fa-facebook-f"></i></a>
+                                <a target="__blank" href="https://www.facebook.com/wlcsolucoes"><i
+                                        class="fab fa-facebook-f"></i></a>
                             </div>
                             <div class="icon-footer">
-                                <a target="__blank" href="https://www.instagram.com/wsaudebr/"><i class="fab fa-instagram"></i></a>
+                                <a target="__blank" href="https://www.instagram.com/wsaudebr/"><i
+                                        class="fab fa-instagram"></i></a>
                             </div>
                             <div class="icon-footer">
-                                <a target="__blank" href="https://www.youtube.com/watch?v=m0sh7qU-cxs"><i class="fab fa-youtube"></i></a>
+                                <a target="__blank" href="https://www.youtube.com/watch?v=m0sh7qU-cxs"><i
+                                        class="fab fa-youtube"></i></a>
                             </div>
                             <div class="icon-footer">
-                                <a target="__blank" href=""><i class="fab fa-github"></i></a>
+                                <a target="__blank"
+                                    href="https://api.whatsapp.com/send?phone=5582998234782&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20o%20WSa%C3%BAde&lang=pt_br"><i
+                                        class="fab fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
@@ -360,7 +418,7 @@
                             </li>
                             <li>
 
-                                <p><i class="fas fa-phone-volume"></i>+55 82 9 9647-6896</p>
+                                <p><i class="fab fa-whatsapp"></i> +55 82 9 9647-6896</p>
                             </li>
                         </ul>
                     </div>
@@ -370,9 +428,9 @@
                         <h4>Links Úteis</h4>
                         <ul>
                             <li><i class="fas fa-link"></i><a href="">Manual do WSaúde</a></li>
-                            <li><i class="fas fa-link"></i><a href="./pages/aboutUs.html">Sobre Nós</a></li>
-                            <li><i class="fas fa-link"></i><a href="./pages/privacyPolicy.html">Política de Privacidade</a></li>
-                            <li><i class="fas fa-link"></i><a href="./pages/termsofUse.html">Termos de Uso</a></li>
+                            <li><i class="fas fa-link"></i><a href="">Sobre Nós</a></li>
+                            <li><i class="fas fa-link"></i><a href="">Política de Privacidade</a></li>
+                            <li><i class="fas fa-link"></i><a href="">Termos de Uso</a></li>
                         </ul>
                     </div>
                 </div>
@@ -382,9 +440,20 @@
     </footer>
 
     <!--Script-->
-   <script src="./apps/menuFixed.js"></script>
-   <script src="./apps/menuMobile.js"></script>
-   <script>document.addEventListener('DOMContentLoaded',function(){var JSLink=location.protocol+'//omnichatwidget.zenvia.com/main.js',JSElement=document.createElement('script');JSElement.async=!0;JSElement.charset='UTF-8';JSElement.src=JSLink;JSElement.onload=OnceLoaded;document.getElementsByTagName('body')[0].appendChild(JSElement);function OnceLoaded(){if(typeof(omzBao)!=='undefined'){omzBao.init({id:15403});}}},false);</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 800,
+            delay: 300,
+            once: true,
+            disable: 'mobile'
+        }); 
+    </script>
+    <script src="./apps/menuFixed.js"></script>
+    <script src="./apps/menuMobile.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () { var JSLink = location.protocol + '//omnichatwidget.zenvia.com/main.js', JSElement = document.createElement('script'); JSElement.async = !0; JSElement.charset = 'UTF-8'; JSElement.src = JSLink; JSElement.onload = OnceLoaded; document.getElementsByTagName('body')[0].appendChild(JSElement); function OnceLoaded() { if (typeof (omzBao) !== 'undefined') { omzBao.init({ id: 15403 }); } } }, false);</script>
+
 </body>
 
 </html>
