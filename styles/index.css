@@ -233,7 +233,7 @@ svg{
   }
   
   .phone p{
-    margin-right: 100px;
+    margin-right: 40px;
     text-align: center;
     
   }
@@ -771,9 +771,9 @@ color: white;
 }
 
 .plan-card:hover{
-  -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
+  -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03);
         -webkit-transition: 0.3s ease-in;
         -moz-transition: 0.3s ease-in;
         -o-transition: 0.3s ease-in;
@@ -782,7 +782,7 @@ color: white;
 
 .card-title {
   height: 15rem;
-  padding: 3.5rem 1.5rem 1.5rem;
+  padding: 2rem .7rem .7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,7 +819,7 @@ color: white;
 
 .plan-card .plan-item{
   display: flex;
-  margin: 20px 60px;
+  margin: 20px 40px;
   padding: 5px;
 }
 
@@ -838,7 +838,7 @@ color: white;
   display: block;
   right: 1px;
   left: 1px;
-  padding: 20px 32px;
+  padding: 20px 26px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   font-size: 1.5rem;
